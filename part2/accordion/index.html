@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Accordion</title>
+    <script src="scripts/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        $(document).ready(function() {
+            $('p').hide();
+
+            $('ul li:nth-child(1) h1').click(function(){
+                $('span').html(" + ");
+                $('ul li:nth-child(1) h1 span').html(" - ");
+                $('h1').removeClass("highlight");
+                $(this).addClass("highlight");
+                $('p').hide();
+                $('ul li:nth-child(1) p').show();
+                
+            });
+
+            $('ul li:nth-child(2) h1').click(function(){
+                $('span').html(" + ");
+                $('ul li:nth-child(2) h1 span').html(" - ");
+                $('h1').removeClass("highlight");
+                $(this).addClass("highlight");
+                $('p').hide();
+                $('ul li:nth-child(2) p').show();
+            });
+
+            $('ul li:nth-child(3) h1').click(function(){
+                $('span').html(" + ");
+                $('ul li:nth-child(3) h1 span').html(" - ");
+                $('h1').removeClass("highlight");
+                $(this).addClass("highlight");
+                $('p').hide();
+                $('ul li:nth-child(3) p').show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul id="accordion">
+        <li>
+            <h1><span> + </span>Front End Web Developer I </h1>
+            <p>The Front End Web Developer I Program is designed to provide students with the knowledge and skills needed for developing, designing, and promoting websites. Front End Web Developers design the user interface and are responsible for visual design, user interaction, and browser compatibilities. The program courses include basic web programming including Responsive Web Design techniques and strategies and customizing the display for desktop and mobile devices, components of a website, pre-planning tools and strategies of preliminary web development utilizing user interface design, usability, content strategy, incorporating the user experience into a website, and preparing a website to optimally rank within search engines. Topics include defining the needs and goals of a target audience and determining the range of required features and functionality of a website, including producing an interactive end product by optimizing graphics and content, accessibility, and originality.</p>
+        </li>
+        <li>
+            <h1><span> + </span>Front End Web Developer II </h1>
+            <p>The Front End Web Developer II Program is designed to provide students with more intermediate techniques for developing and designing websites. Front End Web Developers design the user interface and are responsible for visual design, user interaction, and browser compatibilities. The program courses include advanced techniques in making content more dynamic by incorporating JavaScript, jQuery, SASS, and Angular into the web development process. Students will also learn Git to share and manage files. </p>
+        </li>
+        <li>
+            <h1><span> + </span>Student Commitment</h1>
+            <p>This intense course encompasses weekly lessons and assignments requiring a serious commitment of time and energy from both students and instructors. Students should plan time each week to experiment with new techniques, complete weekly assignments, meet deadlines, absorb daily lectures, and study/critique their own work. Taking vacations and/or committing to other intense coursework while you are enrolled in this class are not recommended. Some students find it helpful to form or join study groups and/or have casual meet-ups outside of class in order to enhance their learning experience.</p>
+        </li>
+    </ul>
+</body>
+</html>

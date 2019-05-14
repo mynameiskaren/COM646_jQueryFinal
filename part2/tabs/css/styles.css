@@ -1,0 +1,33 @@
+ul.tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #999;
+    width: 100%;
+}
+ul.tabs li {
+    float: left;
+    width: 33.33%;
+
+}
+ul.tabs li a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: #F3F3F3;
+    text-decoration: none;
+}
+ul.tabs li.active {
+    background-color: #222;
+}
+ul.tabs li.active a {
+    color: grey;
+}
+.tabs-content {
+    clear: both;
+}
+.tabs-content div {
+    border: #222 solid 5px;
+    padding: 20px;
+}

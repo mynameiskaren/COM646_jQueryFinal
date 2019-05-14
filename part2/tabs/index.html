@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Tabbed Menu Bar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="scripts/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ <div class="container">
+        <ul class="tabs">
+            <li><a href="#tab1">Course Description</a></li>
+            <li><a href="#tab2">Learning Outcomes</a></li>
+            <li><a href="#tab3">Instructor Bio</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="tab1">
+            <h3>Front End Web Developer II</h3>
+                <p>Provides students with more intermediate to advanced techniques for developing and designing websites. Students who successfully complete the program can use the skills learned in a variety of industries including computer systems design, network and system design, web development, software development, web application development, web site design, web marketing and consulting services.</p>
+                <p>This program requires completion of four courses (COMM 644, COMM 645, COMM 646, COMM 647) and includes online instruction. Courses include intermediate and advanced techniques for making content more dynamic by incorporating JavaScript, jQuery and Cascading Style Sheets (CSS) into the web development process, and installing and setting-up content management systems on a local environment. Topics include responsive web design, customizing the display for desktop and mobile devices and incorporating a variety of media into a website for use on various devices. Promotion of a website through search engine optimization and social media are included.</p>
+
+            </div>
+            <div id="tab2">
+                <h4>Details</h4>
+                <p>This 160 hour course incorporates JavaScript into the web development process. Students will learn how this language can enhance a webpage, allowing additional interactivity and more precise control of page elements.  More advanced techniques used in creating a website and making the content more dynamic will also be taught.  Several types of automation tools will be introduced that can further enhance web development and project maintenance.</p>
+                <strong>Course Textbook</strong>
+                <p>Murach’s JavaScript and jQuery, 2nd Edition <br>
+                By Zak Ruvalcaba and Mary Delameter <br>
+                Murach Publishing<br>
+                ISBN: 9781943872053</p>
+            </div>
+            <div id="tab3">
+             <h4>Instructor: Zak Ruvalcaba</h4>
+              <p>My name is Zak Ruvalcaba and I have been researching, designing, and developing for the Web since 1995. I specialize in web and mobile web site and application development focusing on responsive user interface design, user experience, and usable presentation. I hold a Bachelor's degree from San Diego State University and a Master of Science in Instructional Technology from National University in San Diego.</p>
+              <p>His skill set includes various technologies and tools including HTML/HTML5, CSS/CSS3/LESS, JavaScript, jQuery/jQuery UI/jQuery Mobile, Ajax, JSON, ASPNET, SQL/T-SQL, VBNET, C#, Web Services, PHP, MySQL, Visual Studio, Dreamweaver, and more. I am a Microsoft Certified Application Developer for .NET (MCAD) and a Microsoft Certified Solutions Developer for .NET (MCSD).</p>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('ul.tabs li:first').addClass('active');
+            $('.tabs-content div').hide();
+            $('.tabs-content div:first').show();
+            $('ul.tabs li').on('click',function(){
+                $('ul.tabs li').removeClass('active');
+                $(this).addClass('active');
+                $('.tabs-content div').hide();
+                var activeTab = $(this).find('a').attr('href');
+                $(activeTab).show();
+                return false;
+            });
+        })
+    </script>
+</body>
+</html>

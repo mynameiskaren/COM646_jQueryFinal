@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+    
+}
+h1 {
+    font-weight:  100;
+    background-color: #777;
+    color:#EEE;
+    width: 610px;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.3em;
+    margin: auto;
+    border: 1px solid black;
+
+}
+
+.highlight {
+    background-color: #555;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li p {
+    width: 600px;
+    background-color: #BEBEBE;
+    margin: auto;
+    padding: 20px 15px;
+    border: 0 solid black;
+    border-width: 0px 1px 0px 1px;
+}

@@ -1,11 +1,40 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Vecta Corp. - 24/7 365 turnkey vSolutions for agile eBusinesses</title>
-  <link href="styles/normalize.css" type="text/css" rel="stylesheet">
-  <link href="styles/styles.css" type="text/css" rel="stylesheet">
-  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="UTF-8">
+    <title>Vecta Corp. - 24/7 365 turnkey vSolutions for agile eBusinesses</title>
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet">
+    <link href="styles/styles.css" type="text/css" rel="stylesheet">
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="script/jquery-3.4.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //The Headings
+            $('h2').css({
+                "border":"1px solid black",
+                "color":"#CC1C0D",
+                "padding":"3px 0 3px 20px",
+                "border-radius":"0 5px 0 5px",
+                "background-color":"#DFE3E6"
+            });
+            
+            //The Navigation Menu
+            $('nav ul li').addClass('navigation');
+            $('.navigation').css({
+                "border":"solid 1px #929CA4",
+                "color":"#CC1C0D",
+                "padding":"3px 0 3px 20px",
+                "background-color":"#DFE3E6",
+                "width":"90px"
+            });
+            
+            //Main Content
+            $('p').removeClass();
+            $('p:contains("President")').append("<br>Chevy Dealers Association");
+            $('aside p:first-of-type').wrap("<q></q>").css("font-style","italic");
+            $('b').replaceWith('<a href="http://www.vectacorp.com">Vecta Corporation</a>');
+        });
+    </script>
 </head>
 
 <body>
