@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>jQuery Slideshow</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script/jquery-3.4.1.slim.min.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="slider">
+            <ul class="slideShow">
+                <li class="current"><img width="600" src="images/1.jpg"></li>
+                <li><img width="600" src="images/2.jpg"></li>
+                <li><img width="600" src="images/3.jpg"></li>
+                <li><img width="600" src="images/4.jpg"></li>
+                <li><img width="600" src="images/5.jpg"></li>
+            </ul>
+            
+            <button type="button" id="prev-bttn" class="bttn prev">&larr;</button>
+            
+            <button type="button" id="next-bttn" class="bttn next">&rarr;</button>
+                    </div>
+        <div class="nav">
+            <ul>
+                <li class="current">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>    
+    </div>
 </body>
 </html>
